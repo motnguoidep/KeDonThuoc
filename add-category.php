@@ -7,12 +7,13 @@
         <div class="page-wrapper">
             
             <div class="row page-titles">
-                <div class="col-md-5 align-self-center">
-                    <h3 class="text-primary"> Thêm loại thuốc</h3> </div>
+                <!-- <div class="col-md-5 align-self-center">
+                    <h3 class="text-primary"> Thêm loại thuốc</h3> </div> -->
                 <div class="col-md-7 align-self-center">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="javascript:void(0)">Trang chủ</a></li>
-                        <li class="breadcrumb-item active">Thêm loại thuốc</li>
+                        <h3 class="text-primary" style="font-size: 30px"> THÊM LOẠI THUỐC</h3>
+                        <!-- <li class="breadcrumb-item"><a href="javascript:void(0)">Trang chủ</a></li>
+                        <li class="breadcrumb-item active">Thêm loại thuốc</li> -->
                     </ol>
                 </div>
             </div>
@@ -48,7 +49,7 @@
                                                 <label class="col-sm-3 control-label">Trạng Thái</label>
                                                 <div class="col-sm-9">
                                                      <select class="form-control" id="categoriesStatus" name="categoriesStatus">
-                        <option value="">~~SELECT~~</option>
+                        <option value="">Lựa chọn</option>
                         <option value="1">Có sẵn</option>
                         <option value="2">Không có sẵn</option>
                       </select>

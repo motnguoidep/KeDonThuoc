@@ -12,12 +12,13 @@ $result = $connect->query($sql);
        <div class="page-wrapper">
             
             <div class="row page-titles">
-                <div class="col-md-5 align-self-center">
-                    <h3 class="text-primary"> Các loại thuốc</h3> </div>
+                <!-- <div class="col-md-5 align-self-center">
+                    <h3 class="text-primary"> Các loại thuốc</h3> </div> -->
                 <div class="col-md-7 align-self-center">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="javascript:void(0)">Trang chủ</a></li>
-                        <li class="breadcrumb-item active">Các loại thuốc</li>
+                      <h3 class="text-primary" style="font-size: 30px"> CÁC LOẠI THUỐC</h3>
+                        <!-- <li class="breadcrumb-item"><a href="javascript:void(0)">Trang chủ</a></li>
+                        <li class="breadcrumb-item active">Các loại thuốc</li> -->
                     </ol>
                 </div>
             </div>
@@ -34,13 +35,13 @@ $result = $connect->query($sql);
                             <a href="add-category.php"><button class="btn btn-primary">Thêm loại thuốc</button></a>
                          
                                 <div class="table-responsive m-t-40">
-                                    <table id="myTable" class="table table-bordered table-striped">
+                                    <table  class="table table-bordered table-striped">
                                         <thead>
                                             <tr>
-                                              <th class="text-center">#</th>
+                                              <th class="text-center">Stt</th>
                                                 <th>Tên loại thuốc</th>
                                                 <th>Trạng Thái</th>
-                                                <th>Chỉnh sửa / Xóa</th>
+                                                <th>Chỉnh sửa - Xóa</th>
                                             </tr>
                                        </thead>
                                        <tbody>

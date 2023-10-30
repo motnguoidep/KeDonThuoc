@@ -12,12 +12,14 @@ $result = $connect->query($sql);
        <div class="page-wrapper">
             
             <div class="row page-titles">
-                <div class="col-md-5 align-self-center">
-                    <h3 class="text-primary"> Thuốc</h3> </div>
+                <!-- <div class="col-md-5 align-self-center">
+                    <h3 class="text-primary"> Thuốc</h3> 
+                </div> -->
                 <div class="col-md-7 align-self-center">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="javascript:void(0)">Trang chủ</a></li>
-                        <li class="breadcrumb-item active">Thuốc</li>
+                       <h3 class="text-primary" style="font-size: 30px"> THUỐC</h3>
+                        <!-- <li class="breadcrumb-item"><a href="javascript:void(0)">Trang chủ</a></li>
+                        <li class="breadcrumb-item active">Thuốc</li> -->
                     </ol>
                 </div>
             </div>
@@ -28,25 +30,24 @@ $result = $connect->query($sql);
                 
                 
                 
-                 <div class="card">
+                 <div class="card text-center">
                             <div class="card-body">
                               
                             <a href="add-product.php"><button class="btn btn-primary">Thêm thuốc</button></a>
                          
                                 <div class="table-responsive m-t-40">
-                                    <table id="myTable" class="table table-bordered table-striped">
+                                    <table  class="table table-bordered table-striped">
                                         <thead>
                                             <tr>
-                                              <th class="text-center">#</th>
+                                              <th class="text-center">Stt</th>
                                                 <th style="width:10%;">Hình ảnh</th>
-
-                            <th>Tên thuốc</th>
-                            <th>Giá</th>                           
-                            <th>Số lương</th>
-                            <th>Manufacturer</th>
-                            <th>Category</th>
-                            <th>Trạng Thái</th>
-                                                <th>Chỉnh sửa / Xóa</th>
+                                                <th>Tên thuốc</th>
+                                                <th>Giá</th>                           
+                                                <th>Số lương</th>
+                                                <th>Hãng sản xuất</th>
+                                                <th>Loại thuốc</th>
+                                                <th>Trạng Thái</th>
+                                                <th class="text-center">Chỉnh sửa - Xóa</th>
                                             </tr>
                                        </thead>
                                        <tbody>
@@ -91,20 +92,20 @@ foreach ($result as $row) {
                                             <td><?php  if($row['active']==1)
                                             {
                                                  
-                                                 $activeBrands = "<label class='label label-success' ><h4>Có sẵn</h4></label>";
+                                                $activeBrands = "<label class='label label-success' style='width: 70px;'><h4>Có sẵn</h4></label>";
                                                  echo $activeBrands;
                                             }
                                             else{
                                                 $activeBrands = "<label class='label label-danger'><h4>Không có sẵn</h4></label>";
                                                 echo $activeBrands;
                                             }?></td>
-                                            <td>
+                                            <td class="text-center">
             
-                                                <a href="editproduct.php?id=<?php echo $row['product_id']?>"><button type="button" class="btn btn-xs btn-primary" ><i class="fa fa-pencil"></i></button></a>
+                                                <a href="editproduct.php?id=<?php echo $row['product_id']?>"><button type="button" style="width: 70px" class="btn btn-xs btn-primary" ><i class="fa fa-pencil"></i></button></a>
                                               
 
              
-                                                <a href="php_action/removeProduct.php?id=<?php echo $row['product_id']?>" ><button type="button" class="btn btn-xs btn-danger" onclick="return confirm('Are you sure to delete this record?')"><i class="fa fa-trash"></i></button></a>
+                                                <a href="php_action/removeProduct.php?id=<?php echo $row['product_id']?>" ><button type="button" style="width: 70px" class="btn btn-xs btn-danger" onclick="return confirm('Are you sure to delete this record?')"><i class="fa fa-trash"></i></button></a>
                                            
                                                 
                                                 </td>

@@ -51,7 +51,7 @@
                                                 <label class="col-sm-3 control-label">Trạng Thái</label>
                                                 <div class="col-sm-9">
                                                      <select class="form-control" id="brandStatus" name="brandStatus">
-                        <option value="">~~SELECT~~</option>
+                        <option value="">Lựa chọn</option>
                         <option value="1">Có sẵn</option>
                         <option value="2">Không có sẵn</option>
                       </select>
