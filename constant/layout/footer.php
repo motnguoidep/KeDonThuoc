@@ -50,8 +50,8 @@ function alphaOnly(event) {
   var key = event.keyCode;
   return ((key >= 65 && key <= 90) || key == 8);
 };
-                                        </script>
-                                        <script>
+</script>
+<script>
     // WRITE THE VALIDATION SCRIPT.
     function isNumber(evt) {
         var iKeyCode = (evt.which) ? evt.which : evt.keyCode
@@ -66,8 +66,8 @@ function googleTranslateElementInit() {
   new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
 }
 </script>
-
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+</script>
 <style>
        .goog-logo-link {
     display:none !important;

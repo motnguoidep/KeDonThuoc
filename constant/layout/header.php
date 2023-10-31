@@ -15,7 +15,7 @@ require_once('./constant/connect.php');
 
             </div>
         </marquee>
-   <nav class="navbar top-navbar navbar-expand-md navbar-light">
+        <nav class="navbar top-navbar navbar-expand-md navbar-light">
 
             <div class="navbar-header">
                 <a class="navbar-brand" href="index.php">
