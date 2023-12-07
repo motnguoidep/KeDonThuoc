@@ -256,4 +256,5 @@ $countLowStock2 = $lowStockQuery2->num_rows;
     //   var chart = new google.visualization.BarChart(document.getElementById('myChart1'));
     //   chart.draw(data, options);
     // }
+    
 </script>

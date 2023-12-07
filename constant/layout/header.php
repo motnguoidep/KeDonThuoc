@@ -17,12 +17,12 @@ require_once('./constant/connect.php');
         </marquee>
         <nav class="navbar top-navbar navbar-expand-md navbar-light">
 
-            <div class="navbar-header">
+            <div id="navbar-header">
                 <a class="navbar-brand" href="index.php">
 
-
-                    <b><img src="./assets/uploadImage/Logo/logo3.jpg" style="width: 50%;" alt="homepage"
-                            class="dark-logo" style="width:100%;height:auto;" /></b>
+<!-- 
+                    <b><img src="https://giathuochapu.com/wp-content/uploads/dvlogo.gif" style="width: 50%; color: #0b2a97;" alt="homepage"
+                            class="dark-logo" style="width:100%;height:auto;" /></b> -->
 
                 </a>
             </div>
@@ -34,7 +34,8 @@ require_once('./constant/connect.php');
                     <li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-muted  "
                             href="javascript:void(0)"><i class="mdi mdi-menu"></i></a> </li>
                     <li class="nav-item m-l-10"> <a class="nav-link sidebartoggler hidden-sm-down text-muted  "
-                            href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+                            href="javascript:void(0)"> <b><img src="https://img.upanh.tv/2023/08/31/bee-new11.png" style="width: 15%; " alt="homepage"
+                            class="dark-logo" style="width:100%;height:auto;" /></b></a> </li>
                 </ul>
 
                 <div class="ml-lg-5 pl-lg-5 d-lg-block d-none">
@@ -78,3 +79,8 @@ require_once('./constant/connect.php');
         var today = new Date();
         document.getElementById('time').innerHTML = today;
     </script>
+    <style>
+        .header, #navbar-header{
+            background-color: #0b2a97;
+        }
+    </style>

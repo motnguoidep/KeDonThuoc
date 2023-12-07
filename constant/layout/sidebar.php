@@ -1,20 +1,18 @@
 <?php
 require_once('./constant/connect.php');
-
-
 ?>
 
 
-<div class="left-sidebar">
+<div class="left-sidebar" id="color_blue">
 
     <div class="scroll-sidebar" style="padding-top: 20px">
 
         <nav class="sidebar-nav">
             <ul id="sidebarnav">
-                <li class="nav-devider"></li>
-                <li class="nav-label">Trang chủ</li>
-                <!-- <li> <a href="dashboard.php" aria-expanded="false"><i class="fa fa-tachometer"></i>Thống kê</a>
-                </li> -->
+                <li class="nav-devider "></li>
+                <!-- <li class="nav-label"></li>
+                <li> <a href="patient.php" aria-expanded="false"><i class="fa fa-tachometer"></i>Bệnh Nhân</a> -->
+                </li>
 
                 <!-- <?php if (isset($_SESSION['userId']) && $_SESSION['userId'] == 1) { ?>
                         <li> <a class="has-arrow" href="#" aria-expanded="false"><i class="fa fa-industry"></i><span class="hide-menu">Manufacturer</span></a>
@@ -85,3 +83,12 @@ require_once('./constant/connect.php');
     </div>
 
 </div>
+<style>
+    .nav-devider{
+        /* background-color: #F8F8FF; */
+        color:#0b2a97  ;
+    }
+    #color_blue{
+        color: #0b2a97;
+    }
+</style>

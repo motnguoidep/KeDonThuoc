@@ -92,7 +92,7 @@ if($_POST) {
     <h3 class="popup__content__title">
       Error 
     </h1>
-    <p>email doesnot exists</p>
+    <p>email does not exists</p>
     <p>
       <a href="login.php"><button class="button button--error" data-for="js_error-popup">Close</button></a>
     </p>
